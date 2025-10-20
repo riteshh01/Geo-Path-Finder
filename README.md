@@ -2,7 +2,7 @@
 
 **Geo Path Finder** is an interactive pathfinding visualizer built using **HTML, CSS, and JavaScript**.
 It demonstrates how various pathfinding algorithms work step-by-step on a dynamic grid,
-helping learners understand the logic behind graph traversal and shortest path discovery.
+helping learners understand the logic behind graph traversal and shortest path discovery and make more curious to learn about Graph.
 
 ## 🔧 Features
 
