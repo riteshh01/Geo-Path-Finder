@@ -15,10 +15,12 @@ visualizeBtn.addEventListener('click', () => {
         case 'Bi-Directional': biDirectional(); break;
         case 'Dijkstra\'s': Dijkstra(); break;
         case 'DFS':
+            visited.clear();
             if (DFS(source)) pathToAnimate.push(matrix[source.x][source.y])
             break;
         default: break;
     }
+
     animate(searchToAnimate, 'visited', delay);
 });
 

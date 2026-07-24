@@ -1,12 +1,11 @@
-
 :root {
-    --wall-clr : rgb(3, 24, 33);
-    --visited-clr : rgba(226, 178, 122, 0.75);
-    --path-clr : rgb(114, 237, 103);
+    --wall-clr: rgb(3, 24, 33);
+    --visited-clr: rgba(226, 178, 122, 0.75);
+    --path-clr: rgb(114, 237, 103);
     --text-light: #515067;
 }
 
-span.carret{
+span.carret {
     display: inline-block;
     aspect-ratio: 1;
     width: 12px;
@@ -15,7 +14,8 @@ span.carret{
     background-repeat: no-repeat;
     margin-left: 4px;
 }
-.wall{
+
+.wall {
     background-color: var(--clr-navy);
     animation: wallAnimation .5s ease-out forwards;
 }
@@ -29,15 +29,15 @@ span.carret{
     animation: visitedAnimation 1s ease-out forwards;
 }
 
-.path{
+.path {
     animation: pathAnimation 1s ease-out forwards;
 }
 
-.carret{
+.carret {
     aspect-ratio: 1;
 }
 
-.btn{
+.btn {
     user-select: none;
     white-space: nowrap;
     cursor: pointer;
@@ -51,10 +51,11 @@ span.carret{
     transition: .1s ease-in-out;
 }
 
-.source{
+.source {
     background: url(source.svg);
 }
-.target{
+
+.target {
     background: url(target.svg);
 }
 
@@ -65,11 +66,12 @@ span.carret{
         transform: scale(.3);
         background-color: var(--wall-clr);
     }
-    
+
     50% {
         transform: scale(1.0);
         background-color: var(--wall-clr);
     }
+
     100% {
         transform: scale(1.0);
         background-color: var(--wall-clr);
@@ -105,15 +107,14 @@ span.carret{
         transform: scale(.6);
         background-color: var(--path-clr);
     }
-    
+
     50% {
         transform: scale(1);
         background-color: var(--path-clr);
     }
-    
+
     100% {
         transform: scale(1.0);
         background-color: var(--path-clr);
     }
 }
-
